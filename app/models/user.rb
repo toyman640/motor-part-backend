@@ -6,6 +6,5 @@ class User < ApplicationRecord
   validates :phone_number, presence: true, uniqueness: true
   validates :password_digest, presence: true
 
-  has_secure_password 
-
+  has_secure_password
 end
